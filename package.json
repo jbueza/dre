@@ -8,7 +8,7 @@
     { "name": "Jaime Bueza", "email": "jbueza@gmail.com" }
   ],
   "scripts": {
-    "test": "./node_modules/.bin/mocha -t 10000 test/integration test/unit"
+    "test": "./node_modules/.bin/mocha -t 10000 test/unit"
   },
   "engines": {
     "node": "0.8.x"
