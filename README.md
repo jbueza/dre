@@ -56,7 +56,7 @@ person.findOne({
 
 Incoming!
 
-  
+
 ## Roadmap
 
 * Round 1
@@ -64,6 +64,12 @@ Incoming!
 * Round 2
   * Schemas, auto-validation
 * Round 3
+
+## Running the tests
+
+```
+npm test
+```
 
 ## License 
 
