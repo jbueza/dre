@@ -71,6 +71,10 @@ Incoming!
 npm test
 ```
 
+## Additional Resources
+
+If you're unfamiliar with the Windows Azure Table Storage (Partition Keys and Row Keys), [feel free to dive into the documentation](http://msdn.microsoft.com/en-us/library/windowsazure/dd179338.aspx).
+
 ## License 
 
 (The MIT License)
