@@ -62,7 +62,7 @@ Incoming!
 * Round 1
   * Retrieving, saving, updating, removing entities
 * Round 2
-  * Schemas, auto-validation
+  * Schemas, validation, batching
 * Round 3
 
 ## Running the tests
