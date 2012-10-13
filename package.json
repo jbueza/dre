@@ -10,6 +10,10 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha -t 10000 test/integration test/unit"
   },
+  "engines": {
+    "node": "0.8.x"
+    , "npm": "1.1.x"
+  },
   "devDependencies": {
     "mocha": "*",
     "should": "*",
@@ -19,7 +23,9 @@
   "dependencies": {
     "winston": "*",
     "underscore": "*",
-    "azure": "*"
+    "azure": "*",
+    "node-uuid": "*",
+    "request": "*"
   },
   "main": "index"
 }
