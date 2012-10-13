@@ -14,16 +14,12 @@
     "node": "0.8.x"
     , "npm": "1.1.x"
   },
-  "devDependencies": {
+  "dependencies": {
     "mocha": "*",
     "should": "*",
     "azure": "*",
-    "Faker": "*"
-  }, 
-  "dependencies": {
     "winston": "*",
     "underscore": "*",
-    "azure": "*",
     "node-uuid": "*",
     "request": "*"
   },
