@@ -1,7 +1,20 @@
-
-# Node Azure Tables
+# Node Azure Tables Made Easy
 
   A NodeJS library for a fast, easy way of access Windows Azure Table Storage.
+  
+## Getting Started
+
+```
+npm install leo
+```
+  
+## Roadmap
+
+* Round 1
+  * Retrieving, saving, updating, removing entities
+* Round 2
+  * Schemas, auto-validation
+* Round 3
 
 ## License 
 

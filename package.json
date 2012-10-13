@@ -1,5 +1,5 @@
 {
-  "name": "node-azure-tables",
+  "name": "leo",
   "version": "0.0.1",
   "description": "A NodeJS library for a fast, easy way of access Windows Azure Table Storage.",
   "keywords": ["azure", "tables"],
