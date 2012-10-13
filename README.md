@@ -1,8 +1,6 @@
 # Node Azure Tables Made Easy
 
 A NodeJS library for a fast, easy way of access Windows Azure Table Storage. This library is inspired by [MongooseJS](http://www.mongoosejs.com).
-
-![Build Status](https://travis-ci.org/AgileBusinessCloud/dre.png)
   
 ## Getting Started
 
