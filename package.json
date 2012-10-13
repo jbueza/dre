@@ -1,7 +1,7 @@
 {
   "name": "dre",
   "version": "0.0.2",
-  "description": "A NodeJS library for a fast, easy way of access Windows Azure Table Storage.",
+  "description": "A NodeJS library for a fast and easy way of accessing Windows Azure Table Storage.",
   "keywords": ["azure", "tables", "node", "odm", "orm"],
   "author": "Jaime Bueza <jbueza@gmail.com>",
   "contributors": [
