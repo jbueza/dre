@@ -1,2 +1,2 @@
 
-module.exports = require('./lib/Node Azure Tables');
+module.exports = require('./lib/node-azure-tables');
