@@ -1,3 +1,4 @@
+return true;
 var logger = require("winston"),
     should = require("should"),
     account = require("../fixtures/credentials.json"),
