@@ -5,19 +5,24 @@ var logger = require("winston"),
 
 describe("NodeJS Azure Table Storage Model Provider (?)", function() {
 
-  var client = new Client(account);
-  
+  var sdk = new Client(account);
+
   describe("Properties", function() {
     it("should set the account storage name", function() {
-      client.account.should.have.property("AZURE_STORAGE_ACCOUNT", "example_account");
+      sdk.account.should.have.property("AZURE_STORAGE_ACCOUNT", "example_account");
     });
     it("should set the account key", function() {
-      client.account.should.have.property("AZURE_STORAGE_ACCESS_KEY", "example_key");
+      sdk.account.should.have.property("AZURE_STORAGE_ACCESS_KEY", "example_key");
     });
   });
 
   describe("Defining a model", function() {
-
+    it("should have a model method", function() {
+      sdk.model.should.exist;
+    });
+    it("should define a model when passing a definition", function() {
+      
+    });
 
   });
 
