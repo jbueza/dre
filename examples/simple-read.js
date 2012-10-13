@@ -10,11 +10,11 @@ var Person = dre.model("People", dre.Schema({
   FavoriteAnimal: "string"
 }));
 
-
 var person = new Person();
 
 person.findOne({
-  FirstName: "Jaime"
+  PartitionKey: "dcb83fa0-15c4-463f-99b7-2ce365878b20",
+  RowKey: "58f92ada-2aa9-48f8-9429-4580e0f91b81"
 }, function(err, entity, response) {
   console.log("Found you! ", entity);
 });

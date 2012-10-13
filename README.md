@@ -5,8 +5,54 @@
 ## Getting Started
 
 ```
-npm install leo
+npm install dre
 ```
+
+### Boilerplate
+```javascript 
+var Client = require("../lib/Client");
+
+var dre = new Client({
+  "AZURE_STORAGE_ACCOUNT": "example_account",
+  "AZURE_STORAGE_ACCESS_KEY": "example_key"
+});
+
+var Person = dre.model("People", dre.Schema({
+  FirstName: "string",
+  LastName: "string",
+  FavoriteAnimal: "string"
+}));
+```
+
+### Inserting entities
+
+```javascript
+var person = new Person();
+
+person.save({
+  PartitionKey: "dcb83fa0-15c4-463f-99b7-2ce365878b20",
+  RowKey: "58f92ada-2aa9-48f8-9429-4580e0f91b81",
+  FirstName: "Jaime",
+  LastName: "Bueza"
+}, function(err, entity) {
+  console.log("Saved you! ", entity);
+});
+```
+
+### Retrieving an entity
+
+```javascript
+person.findOne({
+  PartitionKey: "dcb83fa0-15c4-463f-99b7-2ce365878b20",
+  RowKey: "58f92ada-2aa9-48f8-9429-4580e0f91b81"
+}, function(err, entity) {
+  console.log("Found you! ", entity);
+});
+```
+
+
+### Retrieving a set of entities
+
   
 ## Roadmap
 
