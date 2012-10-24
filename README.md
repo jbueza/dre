@@ -54,7 +54,21 @@ person.findOne({
 
 ### Retrieving a set of entities
 
-Incoming!
+#### Simple with no query (retrieves all entities in a table)
+
+```javascript
+new Person().find(null, function(err, entities) {
+  console.log("Found Entities: " + entities.length);
+});
+```
+
+#### Passing a Query for specific entities
+
+```javascript
+new Person().find({ FirstName: "Jaime" }, function(err, entities) {
+  console.log("Found Entities: " + entities.length);
+});
+```
 
 
 ## Roadmap
