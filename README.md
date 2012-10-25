@@ -15,8 +15,25 @@ npm install dre
 var Client = require("../lib/Client");
 
 var dre = new Client({
-  "AZURE_STORAGE_ACCOUNT": "example_account",
+  "AZURE_STORAGE_ACCOUNT": "example_account", 
   "AZURE_STORAGE_ACCESS_KEY": "example_key"
+});
+
+var Person = dre.model("People", dre.Schema({
+  FirstName: "string",
+  LastName: "string",
+  FavoriteAnimal: "string"
+}));
+```
+
+### Using DevStorage (Windows)
+```javascript 
+var Client = require("../lib/Client")
+  , ServiceClient = azure.ServiceClient;
+
+var dre = new Client({
+  "AZURE_STORAGE_ACCOUNT": ServiceClient.DEVSTORE_STORAGE_ACCOUNT, 
+  "AZURE_STORAGE_ACCESS_KEY": ServiceClient.DEVSTORE_STORAGE_ACCESS_KEY 
 });
 
 var Person = dre.model("People", dre.Schema({
@@ -70,11 +87,21 @@ new Person().find({ FirstName: "Jaime" }, function(err, entities) {
 });
 ```
 
+### Removing an entity
+
+```javascript
+new Person().remove({
+  PartitionKey: "dcb83fa0-15c4-463f-99b7-2ce365878b20",
+  RowKey: "58f92ada-2aa9-48f8-9429-4580e0f91b81"
+}, function(err, entity) {
+  console.log("Removed you! ", entity);
+});
+```
 
 ## Roadmap
 
 * Round 1
-  * Retrieving, saving, updating, removing entities
+  * Retrieving, saving, updating, removing entities 
 * Round 2
   * Schemas, validation, batching
 * Round 3
