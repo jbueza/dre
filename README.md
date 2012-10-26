@@ -101,10 +101,11 @@ new Person().remove({
 ## Roadmap
 
 * Round 1
-  * Retrieving, saving, updating, removing entities 
+  * -Retrieving-, -saving-, -updating-, removing entities 
 * Round 2
   * Schemas, validation, batching
 * Round 3
+  * More examples (web apps with ExpressJS)
 
 ## Running the tests
 
