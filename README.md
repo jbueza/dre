@@ -101,7 +101,11 @@ new Person().remove({
 ## Roadmap
 
 * Round 1
-  * -Retrieving-, -saving-, -updating-, removing entities 
+  * ✓ Retrieving an entity
+  * ✓ Retrieving a list of entities
+  * ✓ Saving entities
+  * ✓ Updating a specific entity 
+  * Removing entities 
 * Round 2
   * Schemas, validation, batching
 * Round 3
